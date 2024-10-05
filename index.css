@@ -1,0 +1,107 @@
+.body
+{
+background:#CBBDA0;
+}
+
+
+.h1 {
+    font-size: 50px; 
+    text-align: center; 
+    position: relative;
+    top: 20%; 
+    left: -30%; 
+    color: #FFD9E4;
+    font-family:Timmana;
+}
+
+
+    .p {
+        max-width: 400px; /* Ajusta el ancho para forzar el salto de línea */
+        text-align: justify; /* Alineación del texto */
+        line-height: 1.5; 
+    color: #8D7A56 ;
+    font-family: Tienne;
+    font-size: 25px;
+    margin-left: 10%;
+}
+
+
+.h2 {
+    font-size: 40px; 
+    text-align: center;
+    position: relative;
+    top: 42%; 
+    left: -25%; 
+    color: #593620;
+    font-family: Tienne;
+    margin-top: -30px;
+}
+
+
+
+
+.div{
+    display: flex;
+    justify-content: center; 
+    gap: 160px; 
+    padding: 20px; 
+}
+
+
+
+.div2 {
+    margin: 0;
+    position: absolute;
+    top: 10px; 
+    right: 10px; 
+    display: flex;
+    flex-direction: column; 
+    gap: 5px; 
+}
+
+
+
+.figure {
+    
+position: absolute;
+    top: 0;
+    left: 0;
+}
+
+
+
+.rectangulo {
+    width: 100%; 
+    height: 100px; 
+    background-color: #D8ABB7; 
+}
+
+.img {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+}  
+
+
+.img5{
+    position: relative; /* Permite posicionar elementos dentro del contenedor */
+    left: 13; /* Alinea el contenedor a la izquierda */
+    display: flex; 
+    justify-content: flex-start; /* Alinea las imágenes al inicio */
+    align-items: flex-end; 
+    gap: 10px; 
+}
+
+
+.bb {
+    position: absolute; 
+    top: 0; 
+    left: 50%; 
+    transform: translateX(-50%);
+    margin-top: -80px; 
+    width: 600px;
+    height: auto; 
+}
+
+
+
