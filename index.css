@@ -139,44 +139,63 @@ input[type="text"] {
     background-color: #f0f0f0;
 }
 
+
 .contenedor {
-    display: flex;
-    flex-wrap: wrap; 
-    justify-content: space-between; /* Espaciado entre los productos */
-    max-width: 1200px; 
-    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    width: 90%;
+    max-width: 1200px;
+    margin: 20px auto;
 }
 
 .producto {
-    background: white;
-    border-radius: 8px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-    padding: 20px;
-    text-align: center;
-    margin: 10px; /* Margen para separación entre productos */
-    flex: 0 1 calc(20% - 20px); 
-    box-sizing: border-box; 
+    background-color: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+    cursor: pointer;
+}
+
+.producto:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.producto:active {
+    transform: translateY(2px);
 }
 
 .producto img {
     width: 100%;
-    border-radius: 8px;
+    height: auto;
+    display: block;
+    border-bottom: 1px solid #ddd;
 }
 
-.nombre span {
-    font-size: 1.5em;
-    margin: 10px 0;
-}
-
-.estrellas span {
-    color: gold;
-    font-size: 1.2em;
-}
-
-.precio span {
-    font-size: 1.2em;
+.nombre {
+    font-size: 1.1rem;
+    font-weight: bold;
+    text-align: center;
+    padding: 10px 0;
     color: #333;
 }
+
+.estrellas {
+    text-align: center;
+    color: gold;
+    font-size: 1rem;
+    padding: 5px 0;
+}
+
+.precio {
+    text-align: center;
+    font-size: 1.2rem;
+    color: #555;
+    padding: 10px 0;
+}
+
 
 
 .parrafocute {
@@ -205,6 +224,53 @@ input[type="text"] {
     color: #333; 
     font-size: 1.2em; 
     margin: 0; 
+}
+
+.quienes {
+    display: none;
+}
+
+#quienes-somos {
+    background-color: palevioletred;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 600px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: opacity 0.3s ease;
+}
+
+#quienes-somos h2 {
+    margin-top: 0;
+    color: plum;
+}
+
+.pago {
+    display: none;
+}
+
+#pago-detalle {
+    background-color:gray;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 600px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: opacity 0.3s ease;
+}
+
+#pago-detalle h2 {
+    margin-top: 0;
+    color:palevioletred;
+}
+
+#pago-detalle ul {
+    padding-left: 20px;
+    color: plum;
+}
+
+#pago-detalle ul li {
+    margin-bottom: 10px;
 }
 
 

@@ -6,7 +6,7 @@
 
 body {
     font-family: Arial, sans-serif;
-    background-color: #f0f0f0;
+    background-color: plum;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -59,4 +59,12 @@ button:hover {
     text-align: center;
     margin-top: 10px;
 }
+
+
+.figure {
+    
+    position: absolute;
+        top: 0;
+        left: 0;
+    }
 

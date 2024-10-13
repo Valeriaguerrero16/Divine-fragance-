@@ -1,6 +1,6 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: #f3f3f3;
+    background-color: plum;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -55,3 +55,10 @@ button:hover {
     font-size: 14px;
     color: #fff;
 }
+
+.figure {
+    
+    position: absolute;
+        top: 0;
+        left: 0;
+    }

@@ -64,3 +64,27 @@ document.addEventListener('click', function(event) {
         resultsList.style.display = 'none';
     }
 });
+
+
+document.addEventListener('DOMContentLoaded', () => {
+    const quienesSomosBtn = document.getElementById('quienes-somos-btn');
+    const quienesSomosSection = document.getElementById('quienes-somos');
+
+    quienesSomosBtn.addEventListener('click', (e) => {
+        e.preventDefault(); // Evita que el enlace recargue la página
+        // Alterna la visibilidad de la sección "Quiénes somos"
+        quienesSomosSection.classList.toggle('quienes');
+    });
+});
+
+document.addEventListener('DOMContentLoaded', () => {
+    const pagoEnlace = document.getElementById('pago-enlace');
+    const pagoDetalle = document.getElementById('pago-detalle');
+
+    pagoEnlace.addEventListener('click', (e) => {
+        e.preventDefault(); // Evita que el enlace recargue la página
+        // Alterna la visibilidad de la sección "Formas de Pago"
+        pagoDetalle.classList.toggle('pago');
+    });
+});
+
